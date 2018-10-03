@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/nav_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@android:color/black">
+
+        <ListView
+            android:layout_above="@+id/page_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:divider="#757575"
+            android:dividerHeight="1dp"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/empty_view_bg"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="No internet connection..."
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/Widget.AppCompat.ProgressBar"/>
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:id="@+id/page_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/page_nav_bg"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/button_prev"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:paddingStart="10sp"
+                android:paddingEnd="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_previous_page"/>
+
+                <TextView
+                    android:id="@+id/prev_page_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="PREV"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:id="@+id/current_page_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                tools:text="1"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:text="@string/keyword_of"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:id="@+id/total_pages_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                tools:text="399"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:id="@+id/button_next"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:paddingStart="30sp"
+                android:paddingEnd="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/next_page_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NEXT"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next_page"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header_layout"
+        android:layout_gravity="start"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/movie_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Avengers: Infinity War - The Battle Begins now"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/movie_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2018"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="16dp"
+            android:textColor="#E0E0E0"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/movie_rating_bar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            style="?android:progressBarStyleHorizontal"
+            android:background="@drawable/rating_ring_bg"
+            android:progressDrawable="@drawable/rating_progress_ring"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/movie_rating"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            tools:text="8.5"
+            android:textColor="#E0E0E0"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</LinearLayout>

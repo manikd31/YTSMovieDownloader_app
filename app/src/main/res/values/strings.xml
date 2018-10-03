@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">YTS Movies</string>
+    <string name="keyword_synopsis">SYNOPSIS</string>
+    <string name="keyword_imdb">IMDb</string>
+    <string name="_720p">720p</string>
+    <string name="_1080p">1080p</string>
+    <string name="keyword_torrents">TORRENTS</string>
+    <string name="keyword_cast">CAST</string>
+    <string name="no_internet">No internet connection…</string>
+    <string name="no_movies">No movies found…</string>
+    <string name="keyword_as">as</string>
+    <string name="no_cast_info">…No Cast Information Available…</string>
+    <string name="filter_quality">Quality</string>
+    <string name="filter_genre">Genre</string>
+    <string name="filter_rating">Rating</string>
+    <string name="_3d">3D</string>
+
+    <string name="rating0">0+</string>
+    <string name="rating1">1+</string>
+    <string name="rating2">2+</string>
+    <string name="rating3">3+</string>
+    <string name="rating4">4+</string>
+    <string name="rating5">5+</string>
+    <string name="rating6">6+</string>
+    <string name="rating7">7+</string>
+    <string name="rating8">8+</string>
+    <string name="rating9">9+</string>
+
+    <string name="genre0">Action</string>
+    <string name="genre1">Adventure</string>
+    <string name="genre2">Comedy</string>
+    <string name="genre3">Drama</string>
+    <string name="genre4">Horror</string>
+    <string name="genre5">Mystery</string>
+    <string name="genre6">Romance</string>
+    <string name="genre7">Sci-Fi</string>
+    <string name="genre8">Thriller</string>
+    <string name="sort_by">Sort By</string>
+    <string name="order_by">Order By</string>
+    <string name="limit_movies">Limit movies per page:</string>
+    <string name="limit_hint">1 - 50</string>
+    <string name="query_search">Query</string>
+    <string name="enter_search_query">Enter search query</string>
+
+    <string name="open_str">OPEN</string>
+    <string name="close_str">CLOSE</string>
+    <string name="page_num">Enter page number:</string>
+    <string name="page_num_hint">Eg: 1 or 23</string>
+    <string name="keyword_of">OF</string>
+
+</resources>

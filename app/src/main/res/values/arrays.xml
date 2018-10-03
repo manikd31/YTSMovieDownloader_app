@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_rating">
+        <item>@string/rating0</item>
+        <item>@string/rating1</item>
+        <item>@string/rating2</item>
+        <item>@string/rating3</item>
+        <item>@string/rating4</item>
+        <item>@string/rating5</item>
+        <item>@string/rating6</item>
+        <item>@string/rating7</item>
+        <item>@string/rating8</item>
+        <item>@string/rating9</item>
+    </string-array>
+
+    <string-array name="spinner_quality">
+        <item>@string/_720p</item>
+        <item>@string/_1080p</item>
+        <item>@string/_3d</item>
+    </string-array>
+
+    <string-array name="spinner_genre">
+        <item>@string/genre0</item>
+        <item>@string/genre1</item>
+        <item>@string/genre2</item>
+        <item>@string/genre3</item>
+        <item>@string/genre4</item>
+        <item>@string/genre5</item>
+        <item>@string/genre6</item>
+        <item>@string/genre7</item>
+        <item>@string/genre8</item>
+    </string-array>
+
+    <string-array name="spinner_sort">
+        <item>Title</item>
+        <item>Year</item>
+        <item>Rating</item>
+    </string-array>
+
+    <string-array name="spinner_order">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+</resources>
